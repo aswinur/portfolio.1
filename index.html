@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- css  -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- font font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./image/ASWIN.png" alt="" class="logo">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Aswin UR </span></h1>
+                <p class="title_p">This is my official portfolio web page <br>
+                    about all my web development experience and works</p>
+                <a class="btn2 " href="/img/Screenshot 2023-11-14 105008.png" download>Download CV</a>
+            </div>
+        </div>
+    </div>
+<!-- ..................about....................... -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./image/im3.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>How is Elon Musk famous for?
+                        Elon Musk | Biography, SpaceX, Tesla, Twitter, X, & Facts ...
+                        He was a major early funder of Tesla, which makes electric cars and batteries, 
+                        and became its chief executive officer in 2008. He cofounded Neuralink, 
+                        a neurotechnology company, in 2016. Musk purchased the social media service 
+                        Twitter in 2022 and renamed it X in 2023</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>MEARN</span><br>Web App Development</li>
+                            <li><span>MEARN</span><br>Web App Development</li>
+                            <li><span>MEARN</span><br>Web App Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>MEARN</span><br>Web App Development</li>
+                            <li><span>MEARN</span><br>Web App Development</li>
+                            <li><span>MEARN</span><br>Web App Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>MEARN</span><br>Web App Development</li>
+                            <li><span>MEARN</span><br>Web App Development</li>
+                            <li><span>MEARN</span><br>Web App Development</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ..............services.......... -->
+
+
+
+    <!-- ...................contact.............  -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> aswinrameshan@gmil.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 7510232213</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/aswinremeshan/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/aswinremeshan/"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/aswinremeshan/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/aswinremeshan/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                   
+                    
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="emale" placeholder="Your Emale" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn2"> Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Aswinur</p>
+        </div>
+    </div>
+
+    
+    
+    
+    
+    
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links ")
+        var tabcontents=document.getElementsByClassName("tab-contents ")
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById("tabname").classList.add("active-tab")
+        }
+        
+    </script>
+    
+</body>
+</html>
